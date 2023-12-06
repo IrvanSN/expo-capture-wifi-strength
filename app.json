@@ -15,16 +15,32 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.irvansn.expoindoorpositioning"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.irvansn.expoindoorpositioning"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2ff37d19-b19c-4ad6-a797-07927c1a8219"
+      }
+    },
+    "plugins": [
+      [
+        "react-native-wifi-reborn",
+        {
+          "fineLocationPermission": true
+        }
+      ]
+    ],
+    "owner": "irvansn"
   }
 }
